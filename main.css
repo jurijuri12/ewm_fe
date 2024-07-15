@@ -269,6 +269,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 100px;
 }
 
 .text1 h1 {
@@ -277,6 +278,7 @@ header {
     font-weight: 500;
     line-height: 122px;
     color: white;
+    margin-bottom: 10px;
 }
 
 .text1 p {
@@ -315,7 +317,7 @@ header {
     }
 
     .text1 {
-        bottom: 20px;
+        top: 120px;
         left: 20px;
         text-align: left;
     }
@@ -331,7 +333,6 @@ header {
     }
 
     .text1 button {
-        padding: 8px 16px;
         font-size: 0.9em;
         margin: 5px 0;
     }
@@ -593,7 +594,6 @@ header {
     
 }
 
-
 .cellar-essentials {
     display: flex;
     flex-direction: column;
@@ -603,7 +603,6 @@ header {
     margin-top: 111px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1734px;
 }
 
 .text-container {
@@ -652,32 +651,83 @@ header {
     font-weight: 500;
     color: #202020;
 }
+.cellar-essentials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1870px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.text-container h2 {
+    font-size: 40px;
+    font-family: 'Lora';
+    line-height: 51.2px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.text-container p {
+    font-size: 22px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    line-height: 26.82px;
+    margin-bottom: 20px;
+}
+
+.btn3 {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #202020;
+    background-color: transparent;
+    text-decoration: none;
+    width: 328px;
+    height: 75px;
+    border-radius: 1px;
+    border-color: #B7926A;
+}
+
+.btn3 a {
+    font-size: 24px;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    line-height: 29.26px;
+    font-weight: 500;
+    color: #202020;
+}
 
 .wine-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 13px;
 }
 
 .wine-card {
     flex: 1 1 30%;
-    max-width: 30%;
-    overflow: hidden;
+    max-width: 33.33%;
 }
 
 .wine-card img {
-    width: 423px;;
+    max-width: 423px;
     height: 415px;
+    object-fit: cover;
 }
 
 .wine-card p {
     margin: 10px 0;
-    padding: 0 10px;
     font-family: 'Montserrat';
     font-size: 16px;
     line-height: 19.5px;
-    color: #000000;
 }
 
 .price {
@@ -695,26 +745,29 @@ header {
     .cellar-essentials {
         flex-direction: row;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .text-container {
         flex: 1 1 30%;
         max-width: 30%;
-        margin-bottom: 0;
-        padding-right: 20px;
-        margin: 10px;
+        margin-bottom: 250px;
     }
 
     .wine-cards {
-        flex: 1 1 70%;
-        max-width: 70%;
+        flex: 1 1 95%;
+        max-width: 95%;
         justify-content: flex-start;
     }
 
     .wine-card {
         flex: 1 1 30%;
         max-width: 30%;
+    }
+
+    .wine-card img {
+        width: 423px;
+        height: 415px;
     }
 }
 
@@ -723,6 +776,11 @@ header {
         flex: 1 1 45%;
         max-width: 45%;
     }
+
+    .text-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 430px) {
@@ -730,6 +788,7 @@ header {
         flex: 1 1 90%;
         max-width: 90%;
     }
+
     .text-container h2 {
         font-size: 24px;
         font-family: 'Lora';
@@ -757,7 +816,8 @@ header {
         border-radius: 0.5px;
         border-color: #B7926A;
     }
-    .btn3 a{
+
+    .btn3 a {
         font-size: 12px;
         text-decoration: none;
         font-family: 'Montserrat';
@@ -765,18 +825,20 @@ header {
         font-weight: 400;
         color: #202020;
     }
+
     .wine-card img {
         width: 346px;
         height: 339.46px;
     }
+
     .wine-card p {
         margin: 10px 0;
-        padding: 0 10px;
         font-family: 'Montserrat';
         font-size: 12px;
         line-height: 14.63px;
         color: #000000;
     }
+
     .price {
         font-size: 14px;
         color: #B7926A;
@@ -790,9 +852,7 @@ header {
         font-size: 14px;
         color: #00000052;
     }
-
 }
-
 
 .maps {
     display: flex;
@@ -907,15 +967,20 @@ iframe {
 footer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    border-top: 1px solid #e5e5e5;
+    justify-content: center;
+    border-top: 1px solid #B7926A;
     padding: 20px;
-    margin-left: 80px;
+    margin-top: 113px;
+    max-width: 1920px;
+    margin: 113px auto;
 }
 .column {
     flex: 1;
     min-width: 250px;
     margin: 10px;
+    margin-top: 56px;
+    margin-left: 80px;
+
 }
 .signup-form h2{
     font-family: 'Montserrat';
@@ -1016,7 +1081,6 @@ footer {
     .column {
         margin: 0;
         padding: 10px 0;
-        border-bottom: 1px solid #e5e5e5;
     }
     .column h1{
         display: none;
@@ -1033,7 +1097,8 @@ footer {
         font-weight: 400;
         font-size: 14px;
         line-height: 17px;
-        color: #000000;
+        color: #000000;    
+        margin-left: 0px;
      }
     .column:last-child {
         border-bottom: none;
@@ -1095,14 +1160,13 @@ footer {
 .container6 {
     display: grid;
     grid-template-columns: auto 1fr;
-    margin: 60px auto;
-    max-width: 1732px;
+    max-width: 1920px;
     justify-content: center;
 }
 
 .text-content {
     grid-column: 1;
-    width: 51%; 
+    width: 70%; 
     margin-left: 0;
 }
 
@@ -1276,6 +1340,10 @@ footer {
         line-height: 29.26px;
         font-weight: 500;
         color: #202020;
+    }
+    .elfsight-app-26f7ce63-6cbb-406a-a59e-84d4ea854dc9 > div img {
+        width: 433px;
+        height: 403px; 
     }
 }
 .container12 {

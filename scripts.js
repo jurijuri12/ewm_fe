@@ -1,18 +1,17 @@
-
 document.getElementById('navbarBurger').addEventListener('click', function() {
     var menu = document.getElementById('navbarMenu');
     menu.classList.toggle('active');
 });
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
     new Glide('.glide', {
-      type: 'carousel',
-      startAt: 0,
-      perView: 1,
-      focusAt: 'center',
-      gap: 20,
+        type: 'carousel',
+        startAt: 0,
+        perView: 1,
+        gap: 10,
     }).mount();
 });
+
 
 document.querySelectorAll('.collapsible').forEach(item => {
     item.addEventListener('click', () => {
